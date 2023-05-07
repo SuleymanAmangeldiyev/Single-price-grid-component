@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Single Price Grid Component</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgba(34, 205, 248, 0.916);
+      }
+      main {
+        width: 800px;
+        height: 600px;
+        border-radius: 15px;
+        overflow: hidden;
+        padding: 0;
+        font-family: Georgia, Times, "Times New Roman", serif;
+      }
+      .main-top-section {
+        height: 50%;
+        margin: 0;
+        margin-top: -18px;
+        padding: 40px;
+        padding-bottom: 0;
+        background-color: white;
+      }
+      .main-bottom-sections {
+        display: flex;
+        height: 50%;
+        line-height: 10px;
+      }
+      .main-bottom-sections section {
+        width: 50%;
+      }
+      .main_btm-subscription {
+        background-color: rgb(16, 105, 108);
+        padding: 40px;
+      }
+      .main_btm-why_us {
+        background-color: rgba(16, 105, 108, 0.675);
+        padding: 40px;
+      }
+      .main-top-section h1 {
+        color: aqua;
+      }
+      .main-top-section h2 {
+        color: yellowgreen;
+      }
+      .main-top-section p {
+        color: rgb(81, 102, 102);
+      }
+      .main_btm-subscription {
+        color: aliceblue;
+      }
+      .main_btm-subscription #per_mth {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 40px;
+        opacity: 1;
+      }
+      .main_btm-subscription #per_mth span {
+        font-size: 15px;
+        line-height: 100%;
+        line-height: 30px;
+        opacity: 0.5;
+      }
+      .main_btm-subscription p {
+        opacity: 0.7;
+      }
+      .main_btm-subscription button {
+        width: 80%;
+        height: 50px;
+        color: white;
+        background-color: yellowgreen;
+        border-style: none;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .main_btm-why_us {
+        color: white;
+      }
+      .main_btm-why_us p {
+        opacity: 0.5;
+        line-height: 7px;
+      }
+
+      @media screen and (max-width: 350px) {
+        .main-bottom-sections {
+          display: flex;
+          flex-direction: column;
+        }
+        .main-bottom-sections section {
+          width: 100%;
+        }
+        main {
+          width: 300px;
+          height: 1200px;
+          border-radius: 15px; 
+          overflow: hidden;
+        }
+        .main-top-section {
+          height: 35%;
+          padding: 20px;
+        }
+        .main_btm-subscription {
+          padding: 20px;
+        }
+        .main_btm-why_us {
+          padding: 20px;
+         
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="main-top-section">
+        <h1>Join our community</h1>
+        <h2>30-day, hassle-free money back guarantee</h2>
+        <p>
+          Gain access to our full library of tutorials along with expert code
+          reviews.
+        </p>
+        <p>
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </section>
+      <section class="main-bottom-sections">
+        <section class="main_btm-subscription">
+          <h3>Monthly Subscription</h3>
+          <p id="per_mth">&dollar;29 <span>per month</span></p>
+
+          <p>Full access for less than &dollar;1 a day</p>
+          <button>Sign Up</button>
+        </section>
+        <section class="main_btm-why_us">
+          <h3>Why Us</h3>
+          <p>Tutorials by industry experts</p>
+          <p>Peer &amp; expert code review</p>
+          <p>Coding exercises</p>
+          <p>Access to our GitHub repos</p>
+          <p>Community forum</p>
+          <p>Flashcard decks</p>
+          <p>New videos every week</p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
